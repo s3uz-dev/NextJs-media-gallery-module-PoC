@@ -12,8 +12,10 @@ const app = new Hono()
   .notFound(notFound)
   .onError(onError);
 
-export const routes = app
+const routes = app
   .route("/media", mediaLibrary)
+
+export type ApiTypes = typeof routes;
 
 export const GET = handle(app)
 export const POST = handle(app)

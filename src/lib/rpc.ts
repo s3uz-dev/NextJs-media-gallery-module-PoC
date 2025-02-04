@@ -1,4 +1,4 @@
-import { hc } from 'hono/client' 
-import { ApiTypes } from './api-types';
+import { ApiTypes } from '@/app/api/[[...route]]/route';
+import { hc } from 'hono/client'  
 
 export const rpcClient = hc<ApiTypes>(process.env.NEXT_PUBLIC_APP_URL!);
