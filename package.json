@@ -9,7 +9,7 @@
     "lint": "next lint",
     "drizzle:push": "npx drizzle-kit push"
   },
-  "dependencies": {
+   "dependencies": {
     "@hono/zod-validator": "^0.4.2",
     "@hookform/resolvers": "^3.10.0",
     "@libsql/client": "^0.14.0",
