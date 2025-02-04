@@ -47,8 +47,7 @@ export const MainMediaLibrary = () => {
     return response && typeof response.success === 'boolean';
   }
 
-  const formatDate = (dateString: string) => {
-    console.log("FECHAAAAAAAAA ", dateString)
+  const formatDate = (dateString: string) => { 
     const date = new Date(dateString);
     return isNaN(date.getTime()) ? 'Fecha inválida' : date.toLocaleDateString();
   };
