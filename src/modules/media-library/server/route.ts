@@ -192,11 +192,9 @@ const app = new Hono()
                         data: null
                     }, 400);
                 }
-
-                const publicId = match[1];
-
+ 
                 try {
-                    const result = await cloudinary.uploader.destroy(publicId);
+                    const result = await cloudinary.uploader.destroy(media.name);
                     if (result.result !== 'ok') {
                         throw new Error(result.result);
                     }
